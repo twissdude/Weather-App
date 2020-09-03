@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("weather7.jpeg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.app-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #fff;
+  margin: 30px 0 30px 0;
+  font-weight: 600;
+  text-shadow: 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+header input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  border-bottom: 3px solid #dd8c00;
+
+  color: #313131;
+  font-size: 20px;
+  font-weight: 300px;
+  transition: 0.3s ease-out;
+}
+
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location .city {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  color: #fff;
+  font-size: 16px;
+}
+
+.current .temp {
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  margin: 30px 0px;
+  text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.current .temp sup span {
+  font-weight: 200;
+}
+
+.current .weather {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.current .hi-low {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 480px) {
+  .app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .app-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5px 5px;
+    font-size: 12px;
+  }
+  header input {
+    width: 200px;
+    max-width: 300px;
+    padding: 5px 7px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    border-bottom: 3px solid #dd8c00;
+
+    color: #313131;
+    font-size: 16px;
+    font-weight: 100px;
+    transition: 0.3s ease-out;
+  }
+}
